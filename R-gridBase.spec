@@ -4,7 +4,7 @@
 #
 Name     : R-gridBase
 Version  : 0.4.7
-Release  : 3
+Release  : 4
 URL      : https://cran.r-project.org/src/contrib/gridBase_0.4-7.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/gridBase_0.4-7.tar.gz
 Summary  : Integration of base and grid graphics
@@ -23,11 +23,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1521272244
+export SOURCE_DATE_EPOCH=1523306720
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1521272244
+export SOURCE_DATE_EPOCH=1523306720
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
