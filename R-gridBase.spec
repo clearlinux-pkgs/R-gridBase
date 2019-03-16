@@ -4,13 +4,13 @@
 #
 Name     : R-gridBase
 Version  : 0.4.7
-Release  : 15
+Release  : 16
 URL      : https://cran.r-project.org/src/contrib/gridBase_0.4-7.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/gridBase_0.4-7.tar.gz
 Summary  : Integration of base and grid graphics
 Group    : Development/Tools
 License  : GPL-2.0
-BuildRequires : clr-R-helpers
+BuildRequires : buildreq-R
 
 %description
 No detailed description available
@@ -23,11 +23,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1523306720
+export SOURCE_DATE_EPOCH=1552764401
 
 %install
+export SOURCE_DATE_EPOCH=1552764401
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1523306720
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -62,8 +62,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library gridBase|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  gridBase || :
 
 
 %files
