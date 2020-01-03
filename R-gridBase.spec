@@ -4,7 +4,7 @@
 #
 Name     : R-gridBase
 Version  : 0.4.7
-Release  : 24
+Release  : 25
 URL      : https://cran.r-project.org/src/contrib/gridBase_0.4-7.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/gridBase_0.4-7.tar.gz
 Summary  : Integration of base and grid graphics
